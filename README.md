@@ -13,13 +13,13 @@ Import the module and call its public function:
 
 ```powershell
 Import-Module .\PSPartitionTool.psd1
-New-PartitionDisk -DiskNumber 2 -Filesystem NTFS -PartitionCount 1 -Name Data
+New-PartitionDisk -DiskNumber 2 -Filesystem NTFS -PartitionCount 1 -Name "Data"
 ```
 
 Create two approximately equal partitions:
 
 ```powershell
-New-PartitionDisk -DiskNumber 2 -Filesystem Exfat -PartitionCount 2 -Name Backup -Verbose
+New-PartitionDisk -DiskNumber 2 -Filesystem Exfat -PartitionCount 2 -Name "Backup" -Verbose
 ```
 
 Preview the operation without changing the disk:
@@ -61,13 +61,28 @@ For the complete command reference, run:
 ```powershell
 Get-Help New-PartitionDisk -Full
 ```
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Author
 
-**AraElseif**
+AraElseif
 
 ## Repository
 
 GitHub: [github.com/AraElseif/PSPartitionTool](https://github.com/AraElseif/PSPartitionTool)
 
+```bash
+git clone https://github.com/AraElseif/PSPartitionTool.git
+```
+
+## Changelog
+
 See [CHANGELOG.md](CHANGELOG.md) for the version history.
+
+## Status and Warnings
+
+**Status:** In development (Beta)  
+**Compatibility:** PowerShell 5.1+, PowerShell Core
+
