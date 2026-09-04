@@ -34,12 +34,12 @@ also supports `-Confirm` and `-Verbose`.
 ## Parameters
 
 | Parameter         | Required | Description |
-|...................|..........|.............|
-| DiskNumber        | Yes      | Disk number to process, from 0 to 99. |
-| Filesystem        | Yes      | `NTFS` or `Exfat`. |
-| PartitionCount    | Yes      | `1` for all available space or `2` for two approximately equal partitions. |
-| Name              | No       | Label applied to each new partition. |
-| Force             | No       | Bypasses the system and boot disk checks. |
+|.......................|..........|.............|
+| **DiskNumber**        | Yes      | Disk number to process, from 0 to 99. |
+| **Filesystem**        | Yes      | `NTFS` or `Exfat`. |
+| **PartitionCount**    | Yes      | `1` for all available space or `2` for two approximately equal partitions. |
+| **Name**              | No       | Label applied to each new partition. |
+| **Force**             | No       | Bypasses the system and boot disk checks. |
 
 For exFAT, labels longer than 11 characters generate a warning. The current implementation
 continues and passes the label to `Format-Volume`, so use an 11-character label or shorter.
@@ -64,7 +64,7 @@ Get-Help New-PartitionDisk -Full
 
 ## Author
 
-AraElseif
+**AraElseif**
 
 ## Repository
 
