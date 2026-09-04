@@ -34,7 +34,7 @@ also supports `-Confirm` and `-Verbose`.
 ## Parameters
 
 | Parameter         | Required | Description |
-|.......................|..........|.............|
+|-------------------|----------|-------------|
 | **DiskNumber**        | Yes      | Disk number to process, from 0 to 99. |
 | **Filesystem**        | Yes      | `NTFS` or `Exfat`. |
 | **PartitionCount**    | Yes      | `1` for all available space or `2` for two approximately equal partitions. |
